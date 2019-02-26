@@ -1,5 +1,5 @@
 import {
-    newTodo
+    newTodo,
 } from '../src/new-todo.js';
 
 export function newProject() {
@@ -24,6 +24,7 @@ export function newProject() {
     title.className = "title";
     title.innerHTML = "New project";
     title.setAttribute("contenteditable", "true");
+    title.setAttribute("spellcheck", false);
     title.setAttribute("onkeypress", "return (this.innerText.length <= 17)");
     project.appendChild(title);
 
@@ -40,5 +41,4 @@ export function newProject() {
 
     });
 
-    localStorage.setItem("project", project.outerHTML);
 }

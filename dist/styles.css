@@ -4,6 +4,7 @@ html {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    color: #130f40;
 }
 
 #btn {
@@ -16,16 +17,18 @@ html {
     margin-top: 10px;
     color: white;
     font-weight: 700;
+
 }
 
 .project {
     width: 500px;
-    height: 100px;
+    height: auto;
     background-color: #2ECC71;
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
     align-items: center;
+    flex-flow: wrap;
 }
 
 .add-todo {
@@ -58,19 +61,20 @@ html {
     transition: 200ms linear;
     display: flex;
     align-items: center;
-    transition: 350ms;
+    transition: 250ms;
 }
 
-.todo:hover {
+
+/* .todo:hover {
     filter: brightness(90%);
-}
+} */
 
 .fa-plus-square {
     color: white;
 }
 
 .fa-trash-alt {
-    color: #CF000F;
+    color: #130f40;
 }
 
 .fa-minus-circle {
@@ -87,9 +91,9 @@ html {
 .delete-todo {
     background-color: transparent;
     border: none;
-    margin-right: 41px;
-    margin-left: auto;
+    margin-right: 21px;
     padding: 0;
+    font-size: 18px;
 }
 
 .time {
@@ -110,4 +114,24 @@ html {
 .description {
     margin-left: 30px;
     max-width: 400px;
+}
+
+.done {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.todoDone {
+    background-color: #535c68;
+    text-decoration: line-through;
+    color: White;
+}
+
+.white {
+    color: white;
 }

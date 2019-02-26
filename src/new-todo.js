@@ -8,7 +8,8 @@ export function newTodo() {
     // Creating todo containers
     var container = document.createElement('div');
     container.className = "todo";
-    this.parentNode.parentNode.insertBefore(container, this.parentNode.nextSibling);
+    this.parentNode.appendChild(container);
+    // this.parentNode.parentNode.insertBefore(container, this.parentNode.nextSibling);
 
     // Adds date to current task
     var date = document.createElement("span");
@@ -21,13 +22,21 @@ export function newTodo() {
     title.innerHTML = "New task";
     title.className = "new-task";
     title.setAttribute("contenteditable", true);
+    title.setAttribute("spellcheck", false);
     title.setAttribute("onkeypress", "return (this.innerText.length <= 35)");
     container.appendChild(title);
+
+    // Creates is todo done button
+    var done = document.createElement("button");
+    done.className = "done";
+    done.innerHTML = '<i class="fas fa-check-square fa-lg"></i>';
+    container.appendChild(done)
+
 
     // Creates delete todo button
     var deleteTodo = document.createElement("button");
     deleteTodo.className = "delete-todo";
-    deleteTodo.innerHTML = '<i class="fas fa-minus-circle fa-lg"></i>';
+    deleteTodo.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>';
     container.appendChild(deleteTodo);
 
     deleteTodo.addEventListener('click', function () {
@@ -40,9 +49,19 @@ export function newTodo() {
     infoContainer.className = "info-container";
     container.parentNode.insertBefore(infoContainer, container.nextSibling);
 
+    $(container).click(function (e) {
+        if (e.target != this) {
+            return;
+        } else {
+            $(infoContainer).toggle();
+        }
 
-    $(container).click(function () {
-        $(infoContainer).toggle();
+    });
+    $(done).click(function () {
+        $(this.parentNode).toggleClass("todoDone");
+        $(infoContainer).toggleClass("todoDone");
+        $(done).toggleClass("white");
+        $(deleteTodo).toggleClass("white");
     });
 
     var info = document.createElement("p");
@@ -50,7 +69,4 @@ export function newTodo() {
     info.className = "description";
     info.setAttribute("contenteditable", true);
     infoContainer.appendChild(info);
-
-
-
 }
