@@ -39,4 +39,6 @@ export function newProject() {
         } else return;
 
     });
+
+    localStorage.setItem("project", project.outerHTML);
 }

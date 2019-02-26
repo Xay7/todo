@@ -19,9 +19,9 @@ html {
 }
 
 .project {
-    width: 400px;
+    width: 500px;
     height: 100px;
-    background-color: #e1b12c;
+    background-color: #2ECC71;
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
@@ -51,14 +51,18 @@ html {
 }
 
 .todo {
-    width: 400px;
+    width: 500px;
     height: 50px;
-    background-color: #f5f6fa;
+    background-color: #4EEC91;
     margin: 0 auto;
     transition: 200ms linear;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    transition: 350ms;
+}
+
+.todo:hover {
+    filter: brightness(90%);
 }
 
 .fa-plus-square {
@@ -69,15 +73,41 @@ html {
     color: #CF000F;
 }
 
-p {
+.fa-minus-circle {
+    color: red;
+}
+
+.new-task {
     margin: 0;
-    margin-left: 32px;
+    margin-left: 25px;
     max-width: 300px;
+    font-weight: 400;
 }
 
 .delete-todo {
     background-color: transparent;
     border: none;
     margin-right: 41px;
+    margin-left: auto;
     padding: 0;
+}
+
+.time {
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+.info-container {
+    width: 500px;
+    height: auto;
+    background-color: #8EFFC1;
+    margin: 0 auto;
+    transition: 200ms linear;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-left: 30px;
+    max-width: 400px;
 }
