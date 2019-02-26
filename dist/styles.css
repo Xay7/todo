@@ -73,17 +73,13 @@ html {
     color: white;
 }
 
-.fa-trash-alt {
-    color: #130f40;
-}
-
 .fa-minus-circle {
     color: red;
 }
 
 .new-task {
     margin: 0;
-    margin-left: 25px;
+    margin-left: 29px;
     max-width: 300px;
     font-weight: 400;
 }
@@ -112,15 +108,16 @@ html {
 }
 
 .description {
+    margin-right: 30px;
     margin-left: 30px;
-    max-width: 400px;
+    max-width: 440px;
 }
 
 .done {
     background-color: transparent;
     border: none;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 15px;
     padding: 0;
     color: #2c3e50;
     font-size: 20px;
