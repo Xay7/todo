@@ -3,6 +3,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 #btn {
@@ -48,6 +49,9 @@ html {
     background-color: #f5f6fa;
     margin: 0 auto;
     transition: 200ms linear;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fa-plus-square {
@@ -56,4 +60,16 @@ html {
 
 .fa-trash-alt {
     color: #CF000F;
+}
+
+p {
+    margin: 0;
+    margin-left: 32px;
+}
+
+.delete-todo {
+    background-color: transparent;
+    border: none;
+    margin-right: 41px;
+    padding: 0;
 }
