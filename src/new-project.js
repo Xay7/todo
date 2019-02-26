@@ -1,3 +1,7 @@
+import {
+    newTodo
+} from '../src/new-todo.js';
+
 export function newProject() {
 
     // Generate project containers
@@ -11,7 +15,9 @@ export function newProject() {
     // Adds todo button in generated containers
     var addTodo = document.createElement("button");
     addTodo.className = "add-todo";
+    addTodo.innerHTML = '<i class="fas fa-plus-square fa-3x"></i>';
     project.appendChild(addTodo);
+    addTodo.addEventListener('click', newTodo);
 
     // Adds project name text 
     var title = document.createElement("h3");
