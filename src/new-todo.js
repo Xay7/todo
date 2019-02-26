@@ -9,6 +9,7 @@ export function newTodo() {
     var todoText = document.createElement("p");
     todoText.innerHTML = "I'm a task!";
     todoText.setAttribute("contenteditable", true);
+    todoText.setAttribute("onkeypress", "return (this.innerText.length <= 35)");
     container.appendChild(todoText);
 
     // Creates delete todo button
@@ -18,9 +19,7 @@ export function newTodo() {
     container.appendChild(deleteTodo);
 
     deleteTodo.addEventListener('click', function () {
-        if (confirm("Are you sure")) {
-            this.parentNode.remove();
-        } else return;
+        this.parentNode.remove();
     });
 
 }
