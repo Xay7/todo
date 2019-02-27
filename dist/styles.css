@@ -1,134 +1,133 @@
 body,
 html {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    color: #130f40;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  color: #130f40;
 }
 
 #btn {
-    height: 50px;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    background-color: #4cd137;
-    margin-top: 10px;
-    color: white;
-    font-weight: 700;
-
+  height: 50px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #4cd137;
+  margin-top: 10px;
+  color: white;
+  font-weight: 700;
 }
 
 .project {
-    width: 500px;
-    height: auto;
-    background-color: #2ECC71;
-    margin: 0 auto;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    flex-flow: wrap;
+  width: 500px;
+  height: auto;
+  background-color: #2ecc71;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
 }
 
 .add-todo {
-    height: 50px;
-    width: 60px;
-    margin-left: 20px;
-    border: none;
-    background-color: transparent;
+  height: 50px;
+  width: 60px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
 }
 
 .title {
-    margin-left: 20px;
-    font-size: 24px;
+  margin-left: 20px;
+  font-size: 24px;
+  max-width: 300px;
 }
 
 .delete-project {
-    height: 50px;
-    width: 60px;
-    margin-left: auto;
-    margin-right: 20px;
-    background-color: transparent;
-    border: none;
+  height: 50px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
 }
 
 .todo {
-    width: 500px;
-    height: 50px;
-    background-color: #4EEC91;
-    margin: 0 auto;
-    transition: 200ms linear;
-    display: flex;
-    align-items: center;
-    transition: 250ms;
+  width: 500px;
+  height: 50px;
+  background-color: #4eec91;
+  margin: 0 auto;
+  transition: 200ms linear;
+  display: flex;
+  align-items: center;
+  transition: 250ms;
 }
-
 
 /* .todo:hover {
     filter: brightness(90%);
 } */
 
 .fa-plus-square {
-    color: white;
+  color: white;
 }
 
 .fa-minus-circle {
-    color: red;
+  color: red;
 }
 
 .new-task {
-    margin: 0;
-    margin-left: 29px;
-    max-width: 300px;
-    font-weight: 400;
+  margin: 0;
+  margin-left: 29px;
+  max-width: 300px;
+  font-weight: 400;
 }
 
 .delete-todo {
-    background-color: transparent;
-    border: none;
-    margin-right: 21px;
-    padding: 0;
-    font-size: 18px;
+  background-color: transparent;
+  border: none;
+  margin-right: 21px;
+  padding: 0;
+  font-size: 18px;
 }
 
 .time {
-    margin-left: 30px;
-    font-weight: 300;
+  margin-left: 30px;
+  font-weight: 300;
 }
 
 .info-container {
-    width: 500px;
-    height: auto;
-    background-color: #8EFFC1;
-    margin: 0 auto;
-    transition: 200ms linear;
-    display: flex;
-    align-items: center;
+  width: 500px;
+  height: auto;
+  background-color: #8effc1;
+  margin: 0 auto;
+  transition: 200ms linear;
+  display: flex;
+  align-items: center;
 }
 
 .description {
-    margin-right: 30px;
-    margin-left: 30px;
-    max-width: 440px;
+  margin-right: 30px;
+  margin-left: 30px;
+  max-width: 440px;
 }
 
 .done {
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-    margin-right: 15px;
-    padding: 0;
-    color: #2c3e50;
-    font-size: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 0;
+  color: #2c3e50;
+  font-size: 20px;
 }
 
 .todoDone {
-    background-color: #535c68;
-    text-decoration: line-through;
-    color: White;
+  background-color: #535c68;
+  text-decoration: line-through;
+  color: White;
 }
 
 .white {
-    color: white;
+  color: white;
 }

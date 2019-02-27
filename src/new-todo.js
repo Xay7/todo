@@ -18,13 +18,13 @@ export function newTodo() {
     container.appendChild(date);
 
     // Creates todo text
-    var title = document.createElement("p");
-    title.innerHTML = "New task";
-    title.className = "new-task";
-    title.setAttribute("contenteditable", true);
-    title.setAttribute("spellcheck", false);
-    title.setAttribute("onkeypress", "return (this.innerText.length <= 35)");
-    container.appendChild(title);
+    var todoTitle = document.createElement("p");
+    todoTitle.innerHTML = "New task";
+    todoTitle.className = "new-task";
+    todoTitle.setAttribute("contenteditable", true);
+    todoTitle.setAttribute("spellcheck", false);
+    todoTitle.setAttribute("onkeypress", "return (this.innerText.length <= 35)");
+    container.appendChild(todoTitle);
 
     // Creates is todo done button
     var done = document.createElement("button");
@@ -57,6 +57,7 @@ export function newTodo() {
         }
 
     });
+
     $(done).click(function () {
         $(this.parentNode).toggleClass("todoDone");
         $(infoContainer).toggleClass("todoDone");

@@ -1,6 +1,5 @@
-import {
-    newProject
-} from '../src/new-project';
+import { newProject } from "../src/new-project";
 
+newProject();
 
-document.getElementById("btn").addEventListener('click', newProject);
+document.getElementById("btn").addEventListener("click", newProject);
